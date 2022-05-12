@@ -1,3 +1,9 @@
+// AddException.java
+// FindException.java
+// Product.java
+// ProductRepository.java
+// 위의 파일은 아래 코드를 돌리기 위해 있어야 하지만 ProductMangerConsole폴더에 있으므로 따로 올리지는 않겠다
+// ProductManagerConsole.java로 돌려야 되므로 이 파일은 예외
 package com.my.repository;
 
 import java.io.File;
