@@ -194,16 +194,16 @@ GROUP BY location_id
 HAVING COUNT(department_id) > 10;
 
 -- 5.년도별 입사자수를 출력하시오, 단 최근년도부터 출력한다
-SELECT TO_CHAR(hire_date, 'yyyy')||'년' "입사년도", COUNT(*)
+SELECT TO_CHAR(hire_date, 'yyyy')||'년' 입사년도, COUNT(*)
 FROM employees
 GROUP BY TO_CHAR(hire_date, 'yyyy')||'년'
-ORDER BY TO_CHAR(hire_date, 'yyyy')||'년' DESC;
+ORDER BY 입사년도 DESC;
 
 
 -- 6. 하반기(7~12월) 월별 입사자수를 출력하시오.입사자수가 5명이상인 경우만 출력한다
-SELECT TO_CHAR(hire_date, 'MM')||'월', COUNT(*)
+SELECT TO_CHAR(hire_date, 'MM')||'월' 월, COUNT(*)
 FROM employees
 WHERE TO_NUMBER(TO_CHAR(hire_date, 'MM')) BETWEEN 7 AND 12
 GROUP BY TO_CHAR(hire_date, 'MM')||'월'
 HAVING count(*) >= 5
-ORDER BY TO_CHAR(hire_date, 'MM')||'월' ASC;
+ORDER BY 월 ASC;
