@@ -1,0 +1,17 @@
+public class JDBCTest {
+	public static void main(String[] args) {
+		// 1. JDBC 드라이버 설치
+		// 2. JDBC드라이버 클래스로드
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+			return;
+		}
+		// 3. DB연결
+		// 4. SQL문 송신(SELECT,  INSERT/UPDATE/DELETE, VTRSYR/SLYRT/DROP)
+		// 5. 결과 수신  (행들,     처리건수,		  		   0		   		)
+		// 6. 결과 활용
+		// 7. DB 연결 해제
+	}
+}
