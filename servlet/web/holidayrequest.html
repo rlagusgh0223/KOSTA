@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"
+      rel="stylesheet"
+    />
+    <link href="../css/calendar.css" rel="stylesheet" />
+    
+    
+  </head>
+  <body>      
+    <div>
+      <div class="menu">
+        <h1>
+          <clock></clock>
+        </h1>
+        <button type="button" onClick="location.href='login.html'">Logout</button><br>
+        <h3><a href="mainnotice.html">홈</a></h3>
+        <h3><a href="calendar.html">근로관리</a></h3>
+        <h3>휴가요청</h3>
+        <h5><a href="holidayrequest.html">&nbsp;&nbsp;신청</a></h5>
+        <h5><a href="holidaydetail.html">&nbsp;&nbsp;관리</a></h5>
+        <h3><a href="mypage.html">My Page</a></h3>
+      </div>
+      <div class="container">
+        <h1>휴가요청[신청]</h1>
+        <table class="request" width="95%" height="600px">
+          <tr><td>*</td><td>유형</td><td></td><td>
+            <select size="1">
+              <option values="1">월차</option>
+              <option values="2">고영진</option>
+              <option values="3">김아라</option>
+              <option values="4">김지연</option>
+              <option values="5">김현호</option>
+            </select></td></tr>
+          <tr><td>*</td><td>일시</td><td></td><td><input type="date">&nbsp;&nbsp;<input type="date"></td><td><button>기안하기</button></td></tr>
+          <tr><td></td><td>현황</td><td></td><td><input type="text" size="50" placeholder="생성=총휴가일/잔여 3.5일"></td></tr>
+          <tr><td></td><td>사유</td><td></td><td><textarea name="reason" rows="5" cols="100"></textarea></td></tr>
+          <tr><td></td><td>별첨</td><td></td><td><input type="file"></td></tr>
+          <tr><td></td><td>결재자</td><td>*</td><td>
+            <select size="1">
+              <option values="0">1차결재자</option>
+              <option values="1">강민주</option>
+              <option values="2">고영진</option>
+              <option values="3">김아라</option>
+              <option values="4">김지연</option>
+              <option values="5">김현호</option>
+            </select></td></tr>
+          <tr><td></td><td></td><td></td><td>
+            <select size="1">
+              <option values="0">2차결재자</option>
+              <option values="1">강민주</option>
+              <option values="2">고영진</option>
+              <option values="3">김아라</option>
+              <option values="4">김지연</option>
+              <option values="5">김현호</option>
+            </select></td></tr>
+          <tr><td></td><td></td><td></td><td>
+            <select size="1">
+              <option values="3">3차결재자</option>
+              <option values="1">강민주</option>
+              <option values="2">고영진</option>
+              <option values="3">김아라</option>
+              <option values="4">김지연</option>
+              <option values="5">김현호</option>
+            </select></td></tr>
+        </table>
+      </div>
+  </div>
+  <div></div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../jq/calendar.js"></script>
+
+  </body>
+</html>
